@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Roulette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="text-align: center;">
+    <main>
+
+        <h1>La Roulette </h1><small>(resultats dans la console)</small><br>
+        <input type="button" value="spin" id='spin' />
+        
+        <label for="pet-select">Option de mise :</label>
+        
+        <select name="mise" id="select">
+            <option value=""></option>
+            <option value="impaire">Impaire</option>
+            <option value="paire">Paire</option>
+            <option value="simple">Simple</option>
+            <option value="cheval">Cheval</option>
+            <option value="carre">Carré</option>
+            <option value="noir">Noir</option>
+            <option value="rouge">Rouge</option>
+            <option value="manque">Manque 1-18</option>
+            <option value="passe">Passe 19-36</option>
+            <option value="top">12P</option>
+            <option value="mid">12M</option>
+            <option value="bot">12D</option>
+            
+            
+            
+        </select>
+        
+        <div>
+            
+            <input type="number" value="" id="mise" placeholder="choisir un chiffre de mise" />
+            <input type="number" value="" id="mise2" placeholder="en cas de cheval" />
+            
+            <br>
+            <input type="number" value="" id="mise3" placeholder="en cas de carre" />
+            <input type="number" value="" id="mise4" placeholder="en cas de carre" />
+            <span id="spinResult"></span>
+        </div>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <input type="number" value="0" id="myMoney" placeholder="SOMME MISE $" />
+        Vos gains :<span id="gains"></span>
+        
+        <div id="tapis"></div>
+    </main>
+        
+
+</body>
+<script src="/index.js"></script>
+
+</html>

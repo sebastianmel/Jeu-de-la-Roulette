@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+main{
+    position: relative;
+    margin: auto;
+    width: 500px;
+    border: 2px red solid;
+    color: white;
+    background: url(/lib/casino.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    z-index: 0;
+}
+#spinResult{
+    position: absolute;
+    top: 57%;
+    right: 47%;
+    font-size: 30px;
+    color: transparent;
+
+
+}
+canvas{
+    z-index: auto;
+}
+#tapis{
+   
+    margin: auto;
+    background: url(/lib/tapis.JPG);
+    background-size: cover;
+    height: 300px;
+    width: 90%;
+    border-radius: 10px;
+    opacity: 70%;
+
+}
